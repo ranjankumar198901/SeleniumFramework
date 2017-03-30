@@ -10,7 +10,7 @@ import POM.LoginPage;
 public class VerifyInvalidLogin extends BaseTest 
 {
 	@Test
-	public void testVerifyInvalidLogin()
+	public void testVerifyInvalidLogin() throws InterruptedException
 	{
 		SoftAssert s = new SoftAssert();
 		//Enter Invalid Un
@@ -32,9 +32,13 @@ public class VerifyInvalidLogin extends BaseTest
 			l.setpassword(pw);
 		
 			l.clicklogin();
+			
+			//verify Error message
+			l.verifyErrorIsPresent(s);
+			s.assertAll();
 		}
-		//verify Error message
-		l.verifyErrorIsPresent(s);
-		s.assertAll();
+		
+		Thread.sleep(5000);
+		
 	}
 }

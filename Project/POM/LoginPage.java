@@ -36,12 +36,15 @@ public class LoginPage extends BasePage
 	}
 	
 	public void setusername(String Un)
+		
 	{
+		UnTB.clear();
 		UnTB.sendKeys(Un);
 	}
 
 	public void setpassword(String pwd)
 	{
+		PwTB.clear();
 		PwTB.sendKeys(pwd);
 	}
 	
@@ -67,7 +70,7 @@ public class LoginPage extends BasePage
 		}
 		catch(TimeoutException e)
 		{
-				Reporter.log("Error Message is not displated ");
+				Reporter.log("Error Message is not displated ",true);
 				s.fail();
 		}
 	}
