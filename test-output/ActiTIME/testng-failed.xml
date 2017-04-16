@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [ActiTIME]" parallel="tests">
+  <test name="TestFireFox(failed)" parallel="tests">
+    <classes>
+      <class name="Script.VerifyLoginLogout">
+        <methods>
+          <include name="testVerifyLoginLogout"/>
+        </methods>
+      </class> <!-- Script.VerifyLoginLogout -->
+      <class name="Script.verifyLoginPage">
+        <methods>
+          <include name="testVerifyLoginPage"/>
+        </methods>
+      </class> <!-- Script.verifyLoginPage -->
+      <class name="Script.VerifyInvalidLogin">
+        <methods>
+          <include name="testVerifyInvalidLogin"/>
+        </methods>
+      </class> <!-- Script.VerifyInvalidLogin -->
+      <class name="Script.VerifyVersion">
+        <methods>
+          <include name="testVerifyVersion"/>
+        </methods>
+      </class> <!-- Script.VerifyVersion -->
+    </classes>
+  </test> <!-- TestFireFox(failed) -->
+  <test name="TestChrome(failed)" parallel="tests">
+    <classes>
+      <class name="Script.VerifyLoginLogout">
+        <methods>
+          <include name="testVerifyLoginLogout"/>
+        </methods>
+      </class> <!-- Script.VerifyLoginLogout -->
+      <class name="Script.verifyLoginPage">
+        <methods>
+          <include name="testVerifyLoginPage"/>
+        </methods>
+      </class> <!-- Script.verifyLoginPage -->
+      <class name="Script.VerifyInvalidLogin">
+        <methods>
+          <include name="testVerifyInvalidLogin"/>
+        </methods>
+      </class> <!-- Script.VerifyInvalidLogin -->
+      <class name="Script.VerifyVersion">
+        <methods>
+          <include name="testVerifyVersion"/>
+        </methods>
+      </class> <!-- Script.VerifyVersion -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+</suite> <!-- Failed suite [ActiTIME] -->

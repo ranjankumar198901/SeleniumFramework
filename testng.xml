@@ -1,12 +1,27 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
+
+
+<suite thread-count="2" name="ActiTIME" parallel="tests">
+
+<test name="TestChrome">
+  <Parameter name = "Browser" value = "chrome" />
     <classes>
       <class name="Script.VerifyLoginLogout"/>
       <class name="Script.VerifyVersion"/>
       <class name="Script.VerifyInvalidLogin"/>
       <class name="Script.verifyLoginPage"/>
     </classes>
-  </test> 
+</test> 
+
+<test name = "TestFireFox">
+  <Parameter name = "Browser" value = "Firefox" />
+    <classes>
+      <class name="Script.VerifyLoginLogout"/>
+      <class name="Script.VerifyVersion"/>
+      <class name="Script.VerifyInvalidLogin"/>
+      <class name="Script.verifyLoginPage"/>
+    </classes>
+ </test>
+  
 </suite> 
